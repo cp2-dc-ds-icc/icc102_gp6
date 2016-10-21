@@ -2,13 +2,84 @@
 
 <script>
 
+function VoltarPag() {
+
+  window.location.assign("TrabalhoICC3Cert.html");
+
+}
+
+function Verificar(param) {
+
+  var resCertas = 0;
+  var resErradas = 0;
+  document.getElementById("numPergunta").value = parseInt(document.getElementById("numPergunta").value) + 1;
+  var testePergunta = document.getElementById("numPergunta").value;
+
+  if (testePergunta == 1){
+
+    if (param == "Donkey Kong") {
+
+      resCertas += 1;
+
+    } else {
+
+      resErradas += 1;
+
+    }
+
+    document.getElementById("pergunta").innerHTML = "2º - Qual o nome do primeiro videogame de atari?";
+
+  }
+
+  if (testePergunta == 2){
+
+
+
+  }
+
+  if (testePergunta == 3){
+
+
+
+  }
+
+  if (testePergunta == 4){
+
+
+
+  }
+
+  if (testePergunta == 5){
+
+
+
+  }
+
+}
+
 </script>
 
 <style>
 
+#tudo{
+
+  background-color: black;
+
+
+}
+
+#voltar{
+
+  margin-left: 10px;
+  margin-top: 10px;
+  position: absolute;
+
+}
+
 #titulo {
 
   text-align: center;
+  color: white;
 
 }
 
@@ -16,7 +87,32 @@
 
   height: 500px;
   width: 700px;
+  margin-left: 10px;
+
+}
+
+#pergunta{
+
+  color: white;
+  text-align: center;
   margin-left: 450px;
+
+}
+
+#espacoPergunta{
+
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-top: -400px;
+
+}
+
+.caixinha{
+
+  position: relative;
+  margin-left: 500px;
+  margin-top: 10px;
 
 }
 
@@ -33,9 +129,34 @@
 
   <body>
 
+    <div id="tudo">
+
+    <div id="voltar">
+      <input type="button" value="Voltar para Página Inicial" onClick="VoltarPag()">
+    </div>
+
     <h1 id="titulo">Quiz de Jogos</h1>
     <br>
-    <img src="jogos.jpg" id="imagem">
+    <img src="PrincipalJogos.jpg" id="imagem">
+
+    <div id="espacoPergunta">
+
+      <h3 id="pergunta"> 1º - Onde o Mario apareceu pela primeira vez?</h3>
+
+      <input type="button" class="caixinha" id="res1" value="Super Mario World" onClick="Verificar('Super Mario World')"> <br><br>
+      <input type="button" class="caixinha" id="res2" value="Super Mario Bros" onClick="Verificar('Super Mario Bros')"> <br><br>
+      <input type="button" class="caixinha" id="res3" value="Super Mario Land" onClick="Verificar('Super Mario Land')"> <br><br>
+      <input type="button" class="caixinha" id="res4" value="Donkey Kong" onClick="Verificar('Donkey Kong')"> <br><br>
+      <input type="button" class="caixinha" id="res5" value="Zelda: Ocarina of Time" onClick="Verificar('Zelda: Ocarina of Time')"> <br>
+
+      <input type="number" disabled="true" value="0" id="numPergunta">
+
+      <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>  <br><br><br><br>  <br><br><br>
+
+    </div>
+
+  </div>
 
   </body>
 
