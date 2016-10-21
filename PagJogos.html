@@ -20,38 +20,130 @@ function Verificar(param) {
     if (param == "Donkey Kong") {
 
       resCertas += 1;
+      document.getElementById("resCertas").value = resCertas;
 
     } else {
 
       resErradas += 1;
+      document.getElementById("resErradas").value = resErradas;
 
     }
 
-    document.getElementById("pergunta").innerHTML = "2º - Qual o nome do primeiro videogame de atari?";
+    document.getElementById("pergunta").innerHTML = "2º - Qual o nome do personagem principal do jogo The Legend of Zelda: Ocarina of Time?";
+    document.getElementById("res1").value = "Zelda";
+    document.getElementById("res2").value = "Navi";
+    document.getElementById("res3").value = "Link";
+    document.getElementById("res4").value = "Ganondorf";
+    document.getElementById("res5").value = "Sheik";
 
   }
 
   if (testePergunta == 2){
 
+    if (param == "Link"){
 
+      resCertas = document.getElementById("resCertas").value;
+      resCertas += 1;
+      document.getElementById("resCertas").value = resCertas;
+
+    } else {
+
+      resErradas += 1;
+      document.getElementById("resErradas").value = resErradas;
+
+    }
+
+    document.getElementById("pergunta").innerHTML = "3º - Em Chash Bandicoot, a máscara que ajuda Crash é: ?";
+    document.getElementById("res1").value = "Aku Aku";
+    document.getElementById("res2").value = "Néo Cortex";
+    document.getElementById("res3").value = "Tawna";
+    document.getElementById("res4").value = "Papu Papu";
+    document.getElementById("res5").value = "Uka Uka";
 
   }
 
   if (testePergunta == 3){
 
+    if (param == "Aku Aku"){
 
+      resCertas += 1;
+      document.getElementById("resCertas").value = resCertas;
+
+    } else {
+
+      resErradas += 1;
+      document.getElementById("resErradas").value = resErradas;
+
+    }
+
+    document.getElementById("pergunta").innerHTML = "4º - O Jogo que é considerado o representante do velho e único Atari é: ?";
+    document.getElementById("res1").value = "Star Ship";
+    document.getElementById("res2").value = "Space Invaders";
+    document.getElementById("res3").value = "Indy 500";
+    document.getElementById("res4").value = "Combat";
+    document.getElementById("res5").value = "Air-Sea Battle";
 
   }
 
   if (testePergunta == 4){
 
+    if (param == "Space Invaders"){
 
+      resCertas += 1;
+      document.getElementById("resCertas").value = resCertas;
+
+    } else {
+
+      resErradas += 1;
+      document.getElementById("resErradas").value = resErradas;
+
+    }
+
+    document.getElementById("pergunta").innerHTML = "5º - Dentre esses, qual é verdadeiramente o nome de um fantasma do Pac-Man?";
+    document.getElementById("res1").value = "Thinky";
+    document.getElementById("res2").value = "Boby";
+    document.getElementById("res3").value = "Clydy";
+    document.getElementById("res4").value = "Sneaky";
+    document.getElementById("res5").value = "Inky";
 
   }
 
   if (testePergunta == 5){
 
+    if (param == "Inky"){
 
+      resCertas += 1;
+      document.getElementById("resCertas").value = resCertas;
+
+    } else {
+
+      resErradas += 1;
+      document.getElementById("resErradas").value = resErradas;
+
+    }
+
+    document.getElementById("pergunta").innerHTML = "6º - No Sonic Heroes de PS2, Quantas eram as esmeraldas necessária para Sonic virar Super Sonic?";
+    document.getElementById("res1").value = "5";
+    document.getElementById("res2").value = "7";
+    document.getElementById("res3").value = "4";
+    document.getElementById("res4").value = "9";
+    document.getElementById("res5").value = "6";
+
+  }
+
+  if (testePergunta == 6){
+
+    if (param == "7"){
+
+      resCertas += 1;
+      document.getElementById("resCertas").value = resCertas;
+
+    } else {
+
+      resErradas += 1;
+      document.getElementById("resErradas").value = resErradas;
+
+    }
 
   }
 
@@ -147,9 +239,17 @@ function Verificar(param) {
       <input type="button" class="caixinha" id="res2" value="Super Mario Bros" onClick="Verificar('Super Mario Bros')"> <br><br>
       <input type="button" class="caixinha" id="res3" value="Super Mario Land" onClick="Verificar('Super Mario Land')"> <br><br>
       <input type="button" class="caixinha" id="res4" value="Donkey Kong" onClick="Verificar('Donkey Kong')"> <br><br>
-      <input type="button" class="caixinha" id="res5" value="Zelda: Ocarina of Time" onClick="Verificar('Zelda: Ocarina of Time')"> <br>
+      <input type="button" class="caixinha" id="res5" value="The Legend of Zelda: Ocarina of Time" onClick="Verificar('The Legend of Zelda: Ocarina of Time')"> <br>
 
+      <br>
+      numero da pergunta:
       <input type="number" disabled="true" value="0" id="numPergunta">
+      <br>
+      certas:
+      <input type="number" disabled="true" value="0" id="resCertas">
+      <br>
+      erradas:
+      <input type="number" disabled="true" value="0" id="resErradas">
 
       <br><br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br>  <br><br><br><br>  <br><br><br>
