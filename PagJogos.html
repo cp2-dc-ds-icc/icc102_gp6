@@ -47,7 +47,7 @@ function Verificar(param) {
 
     if (param == "Link"){
 
-      resCertas = document.getElementById("resCertas").value;
+      resCertas = parseInt(document.getElementById("resCertas").value);
       resCertas += 1;
       document.getElementById("resCertas").value = resCertas;
 
@@ -77,6 +77,7 @@ function Verificar(param) {
 
     if (param == "Aku Aku"){
 
+      resCertas = parseInt(document.getElementById("resCertas").value);
       resCertas += 1;
       document.getElementById("resCertas").value = resCertas;
 
@@ -106,6 +107,7 @@ function Verificar(param) {
 
     if (param == "Space Invaders"){
 
+      resCertas = parseInt(document.getElementById("resCertas").value);
       resCertas += 1;
       document.getElementById("resCertas").value = resCertas;
 
@@ -135,6 +137,7 @@ function Verificar(param) {
 
     if (param == "Inky"){
 
+      resCertas = parseInt(document.getElementById("resCertas").value);
       resCertas += 1;
       document.getElementById("resCertas").value = resCertas;
 
@@ -156,7 +159,7 @@ function Verificar(param) {
     document.getElementById("res2").onclick = function(){ Verificar('7'); }
     document.getElementById("res3").onclick = function(){ Verificar('4'); }
     document.getElementById("res4").onclick = function(){ Verificar('9'); }
-    document.getElementById("res5").onclick = function(){ Verificar('6'); } 
+    document.getElementById("res5").onclick = function(){ Verificar('6'); }
 
   }
 
@@ -164,6 +167,7 @@ function Verificar(param) {
 
     if (param == "7"){
 
+      resCertas = parseInt(document.getElementById("resCertas").value);
       resCertas += 1;
       document.getElementById("resCertas").value = resCertas;
 
@@ -272,7 +276,7 @@ function Verificar(param) {
 
       <br>
       numero da pergunta:
-      <input type="number" disabled="true" value="0" id="numPergunta">
+      <input type="number" disabled="true" value="1" id="numPergunta">
       <br>
       certas:
       <input type="number" disabled="true" value="0" id="resCertas">
