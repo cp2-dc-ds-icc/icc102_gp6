@@ -17,13 +17,15 @@ function Verificar(param) {
 
   if (testePergunta == 1){
 
-    if (param == "Donkey Kong") {
+    if (param == "Adele") {
 
+      resCertas = parseInt(document.getElementById("resCertas").value);
       resCertas += 1;
       document.getElementById("resCertas").value = resCertas;
 
     } else {
 
+      resErradas = parseInt(document.getElementById("resErradas").value);
       resErradas += 1;
       document.getElementById("resErradas").value = resErradas;
 
@@ -34,18 +36,17 @@ function Verificar(param) {
     document.getElementById("res2").value = "30 anos";
     document.getElementById("res3").value = "19 anos";
     document.getElementById("res4").value = "22 anos";
-    document.getElementById("res5").value = "25 anos";
 
     document.getElementById("res1").onclick = function(){ Verificar('27 anos'); }
     document.getElementById("res2").onclick = function(){ Verificar('30 anos'); }
     document.getElementById("res3").onclick = function(){ Verificar('19 anos'); }
     document.getElementById("res4").onclick = function(){ Verificar('22 anos'); }
-    document.getElementById("res5").onclick = function(){ Verificar('25 anos'); }
+
   }
 
   if (testePergunta == 2){
 
-    if (param == "Link"){
+    if (param == "22 anos"){
 
       resCertas = parseInt(document.getElementById("resCertas").value);
       resCertas += 1;
@@ -53,27 +54,30 @@ function Verificar(param) {
 
     } else {
 
+      resErradas = parseInt(document.getElementById("resErradas").value);
       resErradas += 1;
       document.getElementById("resErradas").value = resErradas;
 
     }
 
-    document.getElementById("pergunta").innerHTML = "3º - Qual o nome completo da cantora Ariana Grande ?";
-    document.getElementById("res1").value = "Ariana Grande Lima ";
-    document.getElementById("res2").value = "Ariana Grande Butera";
-    document.getElementById("res3").value = "Ariana Silva Souza";
-    document.getElementById("res4").value = "Ariana Joan Grande";
 
-    document.getElementById("res1").onclick = function(){ Verificar('Ariana Grande Lima'); }
-    document.getElementById("res2").onclick = function(){ Verificar('Ariana Grande Butera'); }
-    document.getElementById("res3").onclick = function(){ Verificar('Ariana Silva Souza'); }
-    document.getElementById("res4").onclick = function(){ Verificar('Ariana Joan Grande'); }
+  document.getElementById("pergunta").innerHTML = "3º - Qual o nome completo da cantora Ariana Grande ?";
+  document.getElementById("res1").value = "Ariana Grande Lima ";
+  document.getElementById("res2").value = "Ariana Grande Butera";
+  document.getElementById("res3").value = "Ariana Silva Souza";
+  document.getElementById("res4").value = "Ariana Joan Grande";
 
-  }
+  document.getElementById("res1").onclick = function(){ Verificar('Ariana Grande Lima'); }
+  document.getElementById("res2").onclick = function(){ Verificar('Ariana Grande Butera'); }
+  document.getElementById("res3").onclick = function(){ Verificar('Ariana Silva Souza'); }
+  document.getElementById("res4").onclick = function(){ Verificar('Ariana Joan Grande'); }
+
+}
 
   if (testePergunta == 3){
 
-    if (param == "Aku Aku"){
+
+    if (param == "Ariana Grande Butera"){
 
       resCertas = parseInt(document.getElementById("resCertas").value);
       resCertas += 1;
@@ -81,6 +85,7 @@ function Verificar(param) {
 
     } else {
 
+      resErradas = parseInt(document.getElementById("resErradas").value);
       resErradas += 1;
       document.getElementById("resErradas").value = resErradas;
 
@@ -91,18 +96,20 @@ function Verificar(param) {
     document.getElementById("res1").value = "Wiz Khalifa";
     document.getElementById("res2").value = "Fetty Wap";
     document.getElementById("res3").value = "Nick Minaj";
-    document.getElementById("res4").value = "50 cent";
+    document.getElementById("res4").value = "Eminem";
 
     document.getElementById("res1").onclick = function(){ Verificar('Wiz Khalifa'); }
     document.getElementById("res2").onclick = function(){ Verificar('Fetty Wap'); }
     document.getElementById("res3").onclick = function(){ Verificar('Nick Minaj'); }
-    document.getElementById("res4").onclick = function(){ Verificar('50 cent'); }
+    document.getElementById("res4").onclick = function(){ Verificar('Eminem'); }
 
   }
 
   if (testePergunta == 4){
 
-    if (param == "Space Invaders"){
+
+
+    if (param == "Eminem"){
 
       resCertas = parseInt(document.getElementById("resCertas").value);
       resCertas += 1;
@@ -110,29 +117,30 @@ function Verificar(param) {
 
     } else {
 
+      resErradas = parseInt(document.getElementById("resErradas").value);
       resErradas += 1;
       document.getElementById("resErradas").value = resErradas;
 
     }
 
-    document.getElementById("pergunta").innerHTML = "5º - Dentre esses, qual é verdadeiramente o nome de um fantasma do Pac-Man?";
-    document.getElementById("res1").value = "Thinky";
-    document.getElementById("res2").value = "Boby";
-    document.getElementById("res3").value = "Clydy";
-    document.getElementById("res4").value = "Sneaky";
-    document.getElementById("res5").value = "Inky";
+    document.getElementById("pergunta").innerHTML = "5º - A Cantora Taylor Swift tem filhos?";
+    document.getElementById("res1").value = "Sim, 4";
+    document.getElementById("res2").value = "Sim, 1";
+    document.getElementById("res3").value = "Sim, 2";
+    document.getElementById("res4").value = "Não";
 
-    document.getElementById("res1").onclick = function(){ Verificar('Thinky'); }
-    document.getElementById("res2").onclick = function(){ Verificar('Boby'); }
-    document.getElementById("res3").onclick = function(){ Verificar('Clydy'); }
-    document.getElementById("res4").onclick = function(){ Verificar('Sneaky'); }
-    document.getElementById("res5").onclick = function(){ Verificar('Inky'); }
+    document.getElementById("res1").onclick = function(){ Verificar('Sim, 4'); }
+    document.getElementById("res2").onclick = function(){ Verificar('Sim, 1'); }
+    document.getElementById("res3").onclick = function(){ Verificar('Sim, 2'); }
+    document.getElementById("res4").onclick = function(){ Verificar('Não'); }
 
   }
 
   if (testePergunta == 5){
 
-    if (param == "Inky"){
+
+
+    if (param == "Não"){
 
       resCertas = parseInt(document.getElementById("resCertas").value);
       resCertas += 1;
@@ -140,12 +148,14 @@ function Verificar(param) {
 
     } else {
 
+      resErradas = parseInt(document.getElementById("resErradas").value);
       resErradas += 1;
       document.getElementById("resErradas").value = resErradas;
 
     }
 
   }
+
 
 }
 
@@ -183,7 +193,7 @@ function Verificar(param) {
 
 #pergunta{
 
-  color: white;
+  color: black;
   text-align: center;
   margin-left: 450px;
 
@@ -192,7 +202,7 @@ function Verificar(param) {
 #espacoPergunta{
 
   position: relative;
-  color: white;
+  color: black;
   text-align: center;
   margin-top: -400px;
 
@@ -237,11 +247,11 @@ function Verificar(param) {
       <input type="button" class="caixinha" id="res2" value="Ed Sheeran" onClick="Verificar('Ed Sheeran')"> <br><br>
       <input type="button" class="caixinha" id="res3" value="Latino" onClick="Verificar('Latino')"> <br><br>
       <input type="button" class="caixinha" id="res4" value="Bruno Mars" onClick="Verificar('Bruno Mars')"> <br><br>
-      <input type="button" class="caixinha" id="res5" value="Miley Cirus" onClick="Verificar('Miley Cirus')"> <br>
+
 
       <br>
       numero da pergunta:
-      <input type="number" disabled="true" value="1" id="numPergunta">
+      <input type="number" disabled="true" value="0" id="numPergunta">
       <br>
       certas:
       <input type="number" disabled="true" value="0" id="resCertas">
