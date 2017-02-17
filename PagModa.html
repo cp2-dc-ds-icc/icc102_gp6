@@ -19,6 +19,7 @@ function Verificar(param) {
 
     if (param == "Donkey Kong") {
 
+      resCertas = parseInt(document.getElementById("resCertas").value);
       resCertas += 1;
       document.getElementById("resCertas").value = resCertas;
 
@@ -30,15 +31,15 @@ function Verificar(param) {
     }
 
     document.getElementById("pergunta").innerHTML = "2º Qual sua cor favorita?";
-    document.getElementById("Azul").value = "Azul";
-    document.getElementById("Preto").value = "Preto";
-    document.getElementById("Roxo").value = "Roxo";
-    document.getElementById("Verde").value = "verde";
+    document.getElementById("res1").value = "Azul";
+    document.getElementById("res2").value = "Preto";
+    document.getElementById("res3").value = "Roxo";
+    document.getElementById("res4").value = "verde";
 
-    document.getElementById("Azul").onclick = function(){ Verificar('Azul'); }
-    document.getElementById("Preto").onclick = function(){ Verificar('Preto'); }
-    document.getElementById("Roxo").onclick = function(){ Verificar('Roxo'); }
-    document.getElementById("Verde").onclick = function(){ Verificar('Verde'); }
+    document.getElementById("res1").onclick = function(){ Verificar('Azul'); }
+    document.getElementById("res2").onclick = function(){ Verificar('Preto'); }
+    document.getElementById("res3").onclick = function(){ Verificar('Roxo'); }
+    document.getElementById("res4").onclick = function(){ Verificar('Verde'); }
 
   }
 
@@ -52,21 +53,22 @@ function Verificar(param) {
 
     } else {
 
+      resErradas = parseInt(document.getElementById("resErradas").value);
       resErradas += 1;
       document.getElementById("resErradas").value = resErradas;
 
     }
 
     document.getElementById("pergunta").innerHTML = "3º Qual sua peça de roupa favorita - : ?";
-    document.getElementById("Jaqueta de couro").value = "Jaqueta de couro";
-    document.getElementById("Camisa estampada").value = "Camisa estampada";
-    document.getElementById("Camisa lisa").value = "Camisa lisa";
-    document.getElementById("Calça jeans").value = "Calça jeans";
+    document.getElementById("res1").value = "Jaqueta de couro";
+    document.getElementById("res2").value = "Camisa estampada";
+    document.getElementById("res3").value = "Camisa lisa";
+    document.getElementById("res4").value = "Calça jeans";
 
-    document.getElementById("Jaqueta de couro").onclick = function(){ Verificar('Jaqueta de couro'); }
-    document.getElementById("Camisa estampad").onclick = function(){ Verificar('Camisa estampada'); }
-    document.getElementById("Camisa lisa").onclick = function(){ Verificar('Camisa lisa'); }
-    document.getElementById("Calça jeans").onclick = function(){ Verificar('Calça jeans'); }
+    document.getElementById("res1").onclick = function(){ Verificar('Jaqueta de couro'); }
+    document.getElementById("res2").onclick = function(){ Verificar('Camisa estampada'); }
+    document.getElementById("res3").onclick = function(){ Verificar('Camisa lisa'); }
+    document.getElementById("res4").onclick = function(){ Verificar('Calça jeans'); }
 
 
   }
@@ -81,21 +83,22 @@ function Verificar(param) {
 
     } else {
 
+      resErradas = parseInt(document.getElementById("resErradas").value);
       resErradas += 1;
       document.getElementById("resErradas").value = resErradas;
 
     }
 
     document.getElementById("pergunta").innerHTML = "4º - Quais as caracteristicas te definem melhor ?";
-    document.getElementById("Conservador(a) e organizado(a)").value = "Conservador(a) e organizado(a) ";
-    document.getElementById("Critico(a) e destemido(a)").value = "Critico(a) e destemido(a)";
-    document.getElementById("leal e confiante").value = "leal e confiante";
-    document.getElementById("preguiçoso(a) e dorminhoco(a").value = "preguiçoso(a) e dorminhoco(a) ";
+    document.getElementById("res1").value = "Conservador(a) e organizado(a) ";
+    document.getElementById("res2").value = "Critico(a) e destemido(a)";
+    document.getElementById("res3").value = "leal e confiante";
+    document.getElementById("res4").value = "preguiçoso(a) e dorminhoco(a) ";
 
-    document.getElementById("Conservador(a) e organizado(a").onclick = function(){ Verificar('Conservador(a) e organizado(a)'); }
-    document.getElementById("Critico(a) e destemido(a)").onclick = function(){ Verificar('Critico(a) e destemido(a)'); }
-    document.getElementById("leal e confiante").onclick = function(){ Verificar('leal e confiante'); }
-    document.getElementById("preguiçoso(a) e dorminhoco(a").onclick = function(){ Verificar('preguiçoso(a) e dorminhoco(a'); }
+    document.getElementById("res1").onclick = function(){ Verificar('Conservador(a) e organizado(a)'); }
+    document.getElementById("res2").onclick = function(){ Verificar('Critico(a) e destemido(a)'); }
+    document.getElementById("res3").onclick = function(){ Verificar('leal e confiante'); }
+    document.getElementById("res4").onclick = function(){ Verificar('preguiçoso(a) e dorminhoco(a'); }
 
 
   }
@@ -110,6 +113,7 @@ function Verificar(param) {
 
     } else {
 
+      resErradas = parseInt(document.getElementById("resErradas").value);
       resErradas += 1;
       document.getElementById("resErradas").value = resErradas;
 
@@ -122,10 +126,10 @@ function Verificar(param) {
     document.getElementById("res4").value = "Ansiedade";
 
 
-    document.getElementById("Desobediencia").onclick = function(){ Verificar('Desobediencia'); }
-    document.getElementById("Teimosia").onclick = function(){ Verificar('Teimosia'); }
-    document.getElementById("Insegurança").onclick = function(){ Verificar('Insegurança'); }
-    document.getElementById("Ansiedade").onclick = function(){ Verificar('Ansiedade'); }
+    document.getElementById("res1").onclick = function(){ Verificar('Desobediencia'); }
+    document.getElementById("res2").onclick = function(){ Verificar('Teimosia'); }
+    document.getElementById("res3").onclick = function(){ Verificar('Insegurança'); }
+    document.getElementById("res4").onclick = function(){ Verificar('Ansiedade'); }
 
 
   }
@@ -140,6 +144,7 @@ function Verificar(param) {
 
     } else {
 
+      resErradas = parseInt(document.getElementById("resErradas").value);
       resErradas += 1;
       document.getElementById("resErradas").value = resErradas;
 
@@ -235,14 +240,14 @@ function Verificar(param) {
 
       <h3 id="pergunta"> 1º -Qaul o tipo de calçado você prefere ?</h3>
 
-      <input type="button" class="caixinha" id="res1" value="Tênis" onClick="Verificar('tênis')"> <br><br>
+      <input type="button" class="caixinha" id="res1" value="Tênis" onClick="Verificar('Tênis')"> <br><br>
       <input type="button" class="caixinha" id="res2" value="Bota" onClick="Verificar('Botas')"> <br><br>
       <input type="button" class="caixinha" id="res3" value="Mocassim" onClick="Verificar('Mocassim')"> <br><br>
       <input type="button" class="caixinha" id="res4" value="Chinelo" onClick="Verificar('Chinelo')"> <br><br>
 
       <br>
       numero da pergunta:
-      <input type="number" disabled="true" value="1" id="numPergunta">
+      <input type="number" disabled="true" value="0" id="numPergunta">
       <br>
       certas:
       <input type="number" disabled="true" value="0" id="resCertas">
