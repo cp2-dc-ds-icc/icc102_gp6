@@ -154,6 +154,35 @@ function Verificar(param) {
 
     }
 
+    resCertas = parseInt(document.getElementById("resCertas").value);
+    resCertas += 1;
+    document.getElementById("resCertas").value = resCertas;
+
+    resCertas = parseInt(document.getElementById("resCertas").value);
+    resCertas -= 1;
+    document.getElementById("resCertas").value = resCertas;
+
+    resErradas = parseInt(document.getElementById("resErradas").value);
+    resErradas += 1;
+    document.getElementById("resErradas").value = resErradas;
+
+    resErradas = parseInt(document.getElementById("resErradas").value);
+    resErradas -= 1;
+    document.getElementById("resErradas").value = resErradas;
+
+
+    document.getElementById("res1").style.display = 'none';
+    document.getElementById("res2").style.display = 'none';
+    document.getElementById("res3").style.display = 'none';
+    document.getElementById("res4").style.display = 'none';
+
+
+    document.getElementById("pergunta").innerHTML = "Resultado Final";
+    document.getElementById("resFinal").innerHTML = "Você acertou ";
+    document.getElementById("acertos").innerHTML = resCertas;
+    document.getElementById("resFinal2").innerHTML = " e errou ";
+    document.getElementById("erros").innerHTML = resErradas;
+
   }
 
 
@@ -196,6 +225,7 @@ function Verificar(param) {
   color: black;
   text-align: center;
   margin-left: 450px;
+  margin-top: -460px;
 
 }
 
@@ -213,6 +243,37 @@ function Verificar(param) {
   position: relative;
   margin-left: 500px;
   margin-top: 10px;
+
+}
+
+#resCertas{
+
+display: none;
+
+}
+
+#resErradas{
+
+display: none;
+
+
+}
+
+#numPergunta{
+
+display: none;
+
+}
+
+#resFinal {
+
+margin-left: 10px;
+
+}
+
+#format{
+
+margin-left: 450px
 
 }
 
@@ -243,6 +304,7 @@ function Verificar(param) {
 
       <h3 id="pergunta"> 1º - Qual cantor(a) desafinou no prêmio gremmy awards 2016?</h3>
 
+      <div id="format"><p id="resFinal"></p> <p id="acertos"></p> <p id="resFinal2"></p> <p id="erros"></p></div>
       <input type="button" class="caixinha" id="res1" value="Adele" onClick="Verificar('Adele')"> <br><br>
       <input type="button" class="caixinha" id="res2" value="Ed Sheeran" onClick="Verificar('Ed Sheeran')"> <br><br>
       <input type="button" class="caixinha" id="res3" value="Latino" onClick="Verificar('Latino')"> <br><br>
@@ -250,13 +312,13 @@ function Verificar(param) {
 
 
       <br>
-      numero da pergunta:
+
       <input type="number" disabled="true" value="0" id="numPergunta">
       <br>
-      certas:
+
       <input type="number" disabled="true" value="0" id="resCertas">
       <br>
-      erradas:
+
       <input type="number" disabled="true" value="0" id="resErradas">
 
     <br><br><br><br>  <br><br><br><br>  <br><br><br>

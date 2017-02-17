@@ -189,6 +189,36 @@ function Verificar(param) {
 
     }
 
+    resCertas = parseInt(document.getElementById("resCertas").value);
+    resCertas += 1;
+    document.getElementById("resCertas").value = resCertas;
+
+    resCertas = parseInt(document.getElementById("resCertas").value);
+    resCertas -= 1;
+    document.getElementById("resCertas").value = resCertas;
+
+    resErradas = parseInt(document.getElementById("resErradas").value);
+    resErradas += 1;
+    document.getElementById("resErradas").value = resErradas;
+
+    resErradas = parseInt(document.getElementById("resErradas").value);
+    resErradas -= 1;
+    document.getElementById("resErradas").value = resErradas;
+
+
+    document.getElementById("res1").style.display = 'none';
+    document.getElementById("res2").style.display = 'none';
+    document.getElementById("res3").style.display = 'none';
+    document.getElementById("res4").style.display = 'none';
+    document.getElementById("res5").style.display = 'none';
+
+
+    document.getElementById("pergunta").innerHTML = "Resultado Final";
+    document.getElementById("resFinal").innerHTML = "Você acertou ";
+    document.getElementById("acertos").innerHTML = resCertas;
+    document.getElementById("resFinal2").innerHTML = " e errou ";
+    document.getElementById("erros").innerHTML = resErradas;
+
   }
 
 }
@@ -252,6 +282,36 @@ function Verificar(param) {
 
 }
 
+#resCertas{
+
+display: none;
+
+}
+
+#resErradas{
+
+display: none;
+
+}
+
+#numPergunta{
+
+display: none;
+
+}
+
+#resFinal {
+
+margin-left: 10px;
+
+}
+
+#format {
+
+margin-left: 435px;
+
+}
+
 </style>
 
 <html>
@@ -279,6 +339,7 @@ function Verificar(param) {
 
       <h3 id="pergunta"> 1º - Quem foi o primeiro campeão olimpico do Brasil?</h3>
 
+      <div id="format"> <p id="resFinal"></p> <p id="acertos"></p> <p id="resFinal2"></p> <p id="erros"></p> </div>
       <input type="button" class="caixinha" id="res1" value="Cesar Cielo" onClick="Verificar('Cesar Cielo')"> <br><br>
       <input type="button" class="caixinha" id="res2" value="Guilherme Paraense" onClick="Verificar('Guilherme Paraense')"> <br><br>
       <input type="button" class="caixinha" id="res3" value="Adhemar Ferreira da Silva" onClick="Verificar('Adhemar Ferreira da Silva')"> <br><br>
@@ -286,13 +347,13 @@ function Verificar(param) {
       <input type="button" class="caixinha" id="res5" value="Arthur Nory" onClick="Verificar('Arthur Nory')"> <br>
 
       <br>
-      numero da pergunta:
+
       <input type="number" disabled="true" value="0" id="numPergunta">
       <br>
-      certas:
+
       <input type="number" disabled="true" value="0" id="resCertas">
       <br>
-      erradas:
+
       <input type="number" disabled="true" value="0" id="resErradas">
 
     <br><br><br><br>  <br><br><br><br>  <br><br><br>
