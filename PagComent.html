@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+
+<script>
+
+function VoltarPag(){
+
+	window.location.assign("TrabalhoICC3Cert.html");
+
+}
+
+function Sumir(){
+
+	window.location.assign("ComentariosEscritos.html");
+
+}
+
+</script>
+
+<style>
+
+#tudo{
+
+	background-color: #EEE8AA;
+
+}
+
+#barra{
+
+	margin: 0px;
+	background-color: red;
+	height: 100px;
+	border-style: solid;
+	border-color: black;
+
+}
+
+#titulo{
+
+	text-align: center;
+	color: white;
+	margin-top: 0px;
+	font-family: Old English Text MT;
+	font-size: 500%;
+
+		}
+
+#voltar{
+
+	margin-left: 1300px;
+	margin-top: -120px;
+	position: absolute;
+
+	}
+
+#GoHome {
+
+	border: none;
+	background-color: #367c39;
+	padding: 10px;
+	color: white;
+	border-radius: 10px;
+	font-family: sans-serif;
+	font-size: 100%;
+	cursor: pointer;
+}
+
+#CaixaComent{
+
+	height: 300px;
+	width: 500px;
+	padding: none;
+
+}
+
+</style>
+
+<html>
+
+<head>
+
+	<title></title>
+
+	<meta charset="utf-8">
+
+</head>
+
+<body>
+
+<div id="tudo">
+
+	<div id = "barra">
+
+		<h1 id="titulo"> Quiz All </h1>  <div id="voltar">
+      <input type="button" id="GoHome" value="Voltar para Página Inicial" onClick="VoltarPag()" >
+    </div>
+
+		<br>
+
+	</div>
+
+	<h3>Esta é a página de comentários, preencha os campos abaixo e deixe sugestões ou críticas sobre o site</h3>
+
+	<div id="VaiSumir">
+
+	Nome: <br>
+	<input type="text">
+
+	<br><br>
+
+	E-mail:<br>
+	<input type="text">
+
+	<br><br>
+
+	Comentário: <br>
+
+	<form>
+
+		<textarea id="CaixaComent" maxlength="1360">Deixe aqui seu comentário: </textarea>
+
+  </form>
+
+	<br><br>
+
+	<input type="button" value="Enviar" onclick="Sumir()">
+
+  </div>
+
+
+	<br><br><br><br><br><br><br>
+
+
+</div>
+
+</body>
+
+</html>
